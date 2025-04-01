@@ -1,6 +1,5 @@
 # Cahn-Hilliard_equations
 
-# Physics Informed Neural Network(PINN) for Cahn-Hilliard-Navier-Stokes equation
 
 
 This folder is code for the paper simulating Cahn-Hilliard equation by using PINN. Governing equation of Cahn-Hilliard equation is represented in the paper [1][WZJ20](See below detail for this paper) in the reference below.
@@ -17,7 +16,7 @@ the deep neural network is designed to perform as an automatic numerical solver 
 
 ![](assets/example.jpg)
 
-**Main strategies in the paper**():
+## Main strategies in the paper ()
 
 - The authors develop a second-order in time numerical scheme using convex-splitting for the Cahn-Hilliard equation and pressure-projection for the Navier-Stokes equation.
 - This scheme is unconditionally stable and uniquely solvable at each time step, ensuring robustness in simulations.
