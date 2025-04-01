@@ -1,4 +1,4 @@
-# Cahn-Hilliard System Equations Simulation to Find Exact Solution by PINN
+# Cahn-Hilliard System Equations Simulation to Find Exact Solution by PINN(Prerequisite Experiments for On-Going Paper Project)
 
 
 
