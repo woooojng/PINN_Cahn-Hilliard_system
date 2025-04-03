@@ -23,27 +23,16 @@ the deep neural network is designed to perform as an automatic numerical solver 
 - **Time adaptive sampling 2** : By spliting all the domain with unit .25, we make time domain [0, .25], [.25, .5],[.5, .75], [.75, 1.0] separately for neural network training. For doing this, from second net training, we use the final training expected outputs velocity u of the previous net training as the initial condition.
 - *Minibatch* : By using the mini-batch structure of neural network, we can decrease the whole iterations(epochs in the paper) efficiently.
   
-## Editing ()
+## Folders in this repository
 
-The Physics-Informed Neural Network (PINN) merges neural networks (NN) with partial differential equations (PDEs), enabling direct solutions to intricate physical problems without strict dependence on labeled data. This cutting-edge approach synthesizes PDE principles with NN architecture to accurately predict system behavior, proving invaluable across diverse scientific and engineering domains.
-
-This project introduces strategies to enhance PINN approximating capabilities. Key aspects of the paper include:
-
-- The Cahn-Hilliard equation describes the evolution of the phase field variable $\phi$, representing the fluid interface.
-- The Navier-Stokes equation governs the fluid flow, introducing complexity due to the coupling between velocity, pressure, and the phase field.
-
-This project introduces strategies to enhance PINN approximating capabilities. Specifically, the study focuses on applying these enhanced PINNs to solve complex problems related to rising bubble systems with diffuse boundaries  as time goes by, employing a time-adaptive approach in conjunction with the level set method. By simulating using the PINN framework and comparing outcomes with existing results, the research aims to assess qualitative patterns and identify potential novel insights. Furthermore, utilizing existing data to validate accuracy and refine the network through the PINN procedure may reveal convergence among different methods and shed light on the true behavior of the system. Additionally, exploring the Deep Ritz method, which shares similarities with PINNs, could provide deeper insights into the underlying energy minimization associated with the problem when compared against PINN outcomes.
-
-In this notebook, we are going to combine different two networks to apply the adaptive time marching strategy in the paper [1]. To describe in detail for this strategy, by discretizing time domain evenly, one network simulate PDE system on a time period and the next similar but different network simulate successively from the ending point of the former network. Therefore, as the name of itself, this strategy is applying simulation adaptively by marching on discretized time domain.
-
-On our simulation, the first network on time $\[0, .1\]$ is made with the loss function added up for the loss terms coming from initial configuration equations, boundary condition equations and the following NS PDE equations.(See [1])
+- 'devel_AC_gamma2_4_time_adap1': This is advanced experiments based on adaptive sampling and time-adaptive1 methods on neural network training. The experiments use the mini-batch and new sampling method to achieve successful results from the failure on the previous experiments in Fig3.6 in [1].
 
 ```math
 \begin{array}{c}
-    \rho (x) \left( \frac{\partial u}{\partial t} + u \cdot \nabla u \right) = - \nabla p +  \eta({\phi }) \Delta u + \rho (x) g,\
-    \nabla \cdot u = 0,\
-    [u]|_\Gamma = 0,\
-    [pI + \eta (\nabla u + (\nabla u)^T)]|_\Gamma \cdot n = \sigma_{DA} \kappa n .
+    u_t - 0.0001 u_xx +4 u^3 -4 u = 0,\
+    u(0,x) = x^2 sin(2 \pi x),\
+    u(t, -1) = u(t,1),\
+    u_x(t, -1) = u_x(t,1) .
 \end{array}
 ```
 
@@ -60,14 +49,14 @@ On our simulation, the first network on time $\[0, .1\]$ is made with the loss f
 - Python 3.6
 - PyTorch 2.3.0
 - NumPy 1.22.4
-- ‎Matplotlib 3.5.3 
+- ‎Matplotlib 3.5.3
 
 ## Preparation
 
 ### Clone
 
 ```bash
-git clone https://github.com/hiyouga/RepWalk.git](https://github.com/woooojng/Bubble_PINN.git
+git clone https://github.com/woooojng/PINN_Cahn-Hilliard_system.git
 ```
 
 [comment]: # (%### Create an anaconda environment [Optional]:)
