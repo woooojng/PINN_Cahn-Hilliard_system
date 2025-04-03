@@ -39,7 +39,7 @@ the deep neural network is designed to perform as an automatic numerical solver 
 
 
 
-** Challenges**:
+## Challenges:
 
 - Stiffness due to small interfacial width requires an unconditionally stable numerical scheme.
 - Nonlinearity of the system complicates proving the unique solvability of the numerical scheme.
