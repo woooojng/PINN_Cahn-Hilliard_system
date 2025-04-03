@@ -16,14 +16,14 @@ the deep neural network is designed to perform as an automatic numerical solver 
 
 ![](assets/example.jpg)
 
-## Main strategies in the paper ()
+## Main strategies in the paper
 
-- The authors develop a second-order in time numerical scheme using convex-splitting for the Cahn-Hilliard equation and pressure-projection for the Navier-Stokes equation.
-- This scheme is unconditionally stable and uniquely solvable at each time step, ensuring robustness in simulations.
-- The weak coupling in the scheme allows for efficient computation using a Picard iteration method.
-- This work is significant as it provides a stable and accurate method for simulating the CHNS model, which is crucial for understanding the dynamics of fluid interfaces in various applications.
+- **Adaptive sampling** : By making two groups of collocation points for training, this decrease the loss in very efficient way. For the first group, sample the points of training on the domain uniformly. And for the second group, Latin hypercube sampling is used for picking up the training points and then we choose only highest loss points to train by ranking the loss values for each points.
+- **Time adaptive sampling 1** : For sampling on time t domain, we use starting time 0 and the extending end-times in {.1, .2, .3, ..., .9, 1} for each 30000 iterations of neural network training.
+- **Time adaptive sampling 2** : By spliting all the domain with unit .25, we make time domain [0, .25], [.25, .5],[.5, .75], [.75, 1.0] separately for neural network training. For doing this, from second net training, we use the final training expected outputs velocity u of the previous net training as the initial condition.
+- *Minibatch* : By using the mini-batch structure of neural network, we can decrease the whole iterations(epochs in the paper) efficiently.
   
-## Editing
+## Editing ()
 
 The Physics-Informed Neural Network (PINN) merges neural networks (NN) with partial differential equations (PDEs), enabling direct solutions to intricate physical problems without strict dependence on labeled data. This cutting-edge approach synthesizes PDE principles with NN architecture to accurately predict system behavior, proving invaluable across diverse scientific and engineering domains.
 
