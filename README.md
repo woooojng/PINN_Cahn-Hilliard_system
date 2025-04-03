@@ -25,6 +25,7 @@ the deep neural network is designed to perform as an automatic numerical solver 
   
 ## Folders in this repository
 
+- 'AC_1D_gamma2_4' : Reconstruction of the neural network in the Fig3.5 in [1].
 - 'devel_AC_gamma2_4_time_adap1': This is advanced experiments based on adaptive sampling and time-adaptive1 methods on neural network training. The experiments use the mini-batch and new sampling method to achieve successful results from the failure on the previous experiments in Fig3.6 in [1].
 
 ```math
@@ -38,7 +39,7 @@ the deep neural network is designed to perform as an automatic numerical solver 
 
 
 
-**Challenges**:
+** Challenges**:
 
 - Stiffness due to small interfacial width requires an unconditionally stable numerical scheme.
 - Nonlinearity of the system complicates proving the unique solvability of the numerical scheme.
@@ -67,7 +68,7 @@ git clone https://github.com/woooojng/PINN_Cahn-Hilliard_system.git
 
 ## Usage
 
-### Train the model at clonned `Sharp_interface_Bubble_PINN_ver1` directory in terminal:
+### Train the model at clonned directory in terminal:
 
 ```bash
 python3 train.py
@@ -79,7 +80,7 @@ python3 train.py
 python3 train.py -h
 ```
 
-## File Specifications ; Edit
+## File Specifications
 
 - **Building_net.py**: Neural Network Architecture for layer setting and forward step with x, y, t input/ velocity u, pressure P, density rho viscoscity mu output variables.
 - **Conditions.py**: For the equations in [1], the equations on left/right wall and top/bottom outer boundary of domain with MSE function are defined. Also, for the Cahn-Hillard PDE equations in [1], MSE loss function associated with governing equations is defined.
