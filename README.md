@@ -30,7 +30,7 @@ the deep neural network is designed to perform as an automatic numerical solver 
 
 ```math
 \begin{array}{c}
-    u_t - 0.0001 u_xx +4 u^3 -4 u = 0,\
+    u_t - 0.0001 u_{xx} +4 u^3 -4 u = 0,\
     u(0,x) = x^2 sin(2 \pi x),\
     u(t, -1) = u(t,1),\
     u_x(t, -1) = u_x(t,1) .
@@ -39,7 +39,7 @@ the deep neural network is designed to perform as an automatic numerical solver 
 
 
 
-** Challenges**:
+## Challenges:
 
 - Stiffness due to small interfacial width requires an unconditionally stable numerical scheme.
 - Nonlinearity of the system complicates proving the unique solvability of the numerical scheme.
