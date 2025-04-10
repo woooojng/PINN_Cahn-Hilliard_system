@@ -6,6 +6,9 @@ This folder is code for the paper simulating Cahn-Hilliard equation by using PIN
 
 You can download the paper via: [[arXiv]](https://arxiv.org/abs/2007.04542).
 
+## Two Phase Free Boundary Solution Simulation Result Preview
+
+![simulation](Cahn-Hilliard_FEM.gif)
 
 [comment]: # ([[ResearchGate]])
 
