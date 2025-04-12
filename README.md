@@ -6,8 +6,10 @@ This folder is code for the paper simulating Cahn-Hilliard equation by using PIN
 
 You can download the paper via: [[arXiv]](https://arxiv.org/abs/2007.04542).
 
+### Cahn-Hilliard System FEM Solution GIF Preview - Moving free boundary
 
-[comment]: # ([[ResearchGate]])
+<img src="Cahn-Hilliard_FEM.gif" width="400" alt="simulation gif"/>
+
 
 ## Problem Summary
 
