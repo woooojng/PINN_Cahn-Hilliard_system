@@ -8,7 +8,7 @@ You can download the paper via: [[arXiv]](https://arxiv.org/abs/2007.04542).
 
 ### Cahn-Hilliard System FEM Solution Preview - Moving free boundary
 
-<img src="Cahn-Hilliard_FEM.gif" width="600" alt="simulation gif"/>
+<img src="Cahn-Hilliard_FEM.gif" width="400" alt="simulation gif"/>
 [comment]: # ([[ResearchGate]])
 
 ## Problem Summary
