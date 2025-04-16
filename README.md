@@ -4,8 +4,8 @@
 
 This folder is code for the paper simulating Cahn-Hilliard equation by using PINN. Governing equation of Cahn-Hilliard equation is represented in the paper [1][WZJ20](See below detail for this paper) in the reference below.
 
-You can download the paper via: [[arXiv]](https://arxiv.org/abs/2007.04542).
-//The adaptive-weight for updating in loss backward process refers this paper : [[arXiv]](https://www.researchgate.net/publication/354486143_Understanding_and_Mitigating_Gradient_Flow_Pathologies_in_Physics-Informed_Neural_Networks).
+- You can download the paper via: [[arXiv]](https://arxiv.org/abs/2007.04542).
+- The adaptive-weight for updating in loss backward process refers this paper : [[arXiv]](https://www.researchgate.net/publication/354486143_Understanding_and_Mitigating_Gradient_Flow_Pathologies_in_Physics-Informed_Neural_Networks).
 ### Cahn-Hilliard System FEM Solution GIF Preview - Moving free boundary
 
 <img src="Cahn-Hilliard_FEM.gif" width="400" alt="simulation gif"/>
