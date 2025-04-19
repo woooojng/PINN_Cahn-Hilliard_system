@@ -3,6 +3,7 @@
 <p align="center">
 <img src="fig_with_update_2_4_13h.png" alt="Gradient adaptive-weight for simulating Beltrami Flow " width="600"/>
 </p>
+
 - The above Beltrami flow is experimented with the conditions of figure 9 in this paper 
 [[arXiv]](https://arxiv.org/abs/2003.06496). And the result gets more accurate results with the gradient adaptive-weight method application.
 
