@@ -1,7 +1,11 @@
 # The Betrami Flow with strategy of gradient weight adaptive method
 
+  ![Gradient adaptive-weight for simulating Beltrami Flow ](fig with update_2_4_13h.png)
 
-- The adaptive-weight for updating in loss backward process refers this paper : [[arXiv]](https://www.researchgate.net/publication/354486143_Understanding_and_Mitigating_Gradient_Flow_Pathologies_in_Physics-Informed_Neural_Networks).
+
+- The gradient adaptive-weight in loss backward process refers this paper : [[arXiv]](https://www.researchgate.net/publication/354486143_Understanding_and_Mitigating_Gradient_Flow_Pathologies_in_Physics-Informed_Neural_Networks).
+  
+  
 
 <!--
 This folder is code for the paper simulating Cahn-Hilliard equation by using PINN. Governing equation of Cahn-Hilliard equation is represented in the paper [1][WZJ20](See below detail for this paper) in the reference below.
