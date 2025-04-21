@@ -1,9 +1,14 @@
 # The Betrami Flow with strategy of gradient weight adaptive method
 
-  ![Gradient adaptive-weight for simulating Beltrami Flow ](fig_with_update_2_4_13h.png)
+<p align="center">
+<img src="fig_with_update_2_4_13h.png" alt="Gradient adaptive-weight for simulating Beltrami Flow " width="600"/>
+</p>
 
+- The above Beltrami flow is experimented with the conditions of figure 9 in this paper 
+[[arXiv]](https://arxiv.org/abs/2003.06496). And the result gets more accurate results with the gradient adaptive-weight method application.
 
-- The gradient adaptive-weight in loss backward process refers this paper : [[arXiv]](https://www.researchgate.net/publication/354486143_Understanding_and_Mitigating_Gradient_Flow_Pathologies_in_Physics-Informed_Neural_Networks).
+- The gradient weight adaptive(annealing in loss backward process refers Algorithm 2.1 in this paper : [[arXiv]](https://www.researchgate.net/publication/354486143_Understanding_and_Mitigating_Gradient_Flow_Pathologies_in_Physics-Informed_Neural_Networks).
+  
   
   
 
