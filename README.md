@@ -1,6 +1,7 @@
 # Cahn-Hilliard System Equations Simulation to Find Exact Solution by PINN(Prerequisite Experiments for On-Going Paper Project)
 
 
+### This is daily-basis working project. The latest results with the improvement from the paper [1] are in the 'AC_1D_gamma2_4' folder as .png graph files and train.py file.
 
 This folder is code for the paper simulating Cahn-Hilliard equation by using PINN. Governing equation of Cahn-Hilliard equation is represented in the paper [1][WZJ20](See below detail for this paper) in the reference below.
 
