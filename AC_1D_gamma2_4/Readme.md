@@ -4,11 +4,14 @@
 ### This is daily-basis working project. The latest results with the improvement from the paper [1] are in the 'AC_1D_gamma2_4' folder as .png graph files and train.py file.
 To imporve the result of Fig3.5 in [1], here are the brief descriptions for step-by-step development on the experiment with same conditions on the figure.
 - I used new sampling methods and technical engineering strategies to decrease the absolute error for the output of PINN simulation.
-- The below is Fig3.5 in [1], which bacame the basic comparison group result using PINN.
-- The .png files in this folder are the improved results as control group for the same experiments with given condition in Fig 3.5 in [1].
+- The below is Fig3.5 in [1], which bacame the basic control group result using PINN.
+- The .png files in this folder are the improved results as treatment group for the same experiments with given condition in Fig 3.5 in [1].
 
-
-## Preparation
+  <img src="control_group.png" width="400" />
+## Improvement
+- 4_24_energy_adaptive_2d.png file : This is the result of new sampling using highlighting the domain of high total energy of Allen-Cahn system. We adjusted the ratio of new sampling and uniform distributed sampling for input variable x to make collocation point number is same with the one of above experiment Figure3.5 in [1].
+  
+[comment]: # (time-sampling for the t input time variable. I used r = 10 for the next formula.)
 
 ### Clone
 
