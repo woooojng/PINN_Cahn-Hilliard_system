@@ -9,7 +9,7 @@ To imporve the result of Fig3.5 in [1], here are the brief descriptions for step
 
   <img src="control_group.png" width="400" />
 ## Improvement
-- 4_24_energy_adaptive_2d.png file : This is the result of new sampling using highlighting the domain of high total energy of Allen-Cahn system. We adjusted the ratio of new sampling and uniform distributed sampling for input variable x to make collocation point number is same with the one of above experiment Figure3.5 in [1].
+- **4_24_energy_adaptive_2d.png** file : This is the result of new sampling using highlighting the domain of high total energy of Allen-Cahn system. We adjusted the ratio of new sampling and uniform distributed sampling for input variable x to make collocation point number is same with the one of above experiment Figure3.5 in [1].
   
 [comment]: # (time-sampling for the t input time variable. I used r = 10 for the next formula.)
 
