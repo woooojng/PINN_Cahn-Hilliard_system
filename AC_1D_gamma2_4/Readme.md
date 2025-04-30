@@ -8,7 +8,7 @@ To imporve the result of Fig3.5 in [1], here are the brief descriptions for step
 - The .png files in this folder are the improved results as treatment group for the same experiments with given condition in Fig 3.5 in [1].
 
   <img src="control_group.png" width="400" />
-## Improvement
+## Improvement in each date
 - **4_24_energy_adaptive_2d.png** file : This is the result of new sampling using highlighting the domain of high total energy of Allen-Cahn system. We adjusted the ratio of new sampling and uniform distributed sampling for input variable x to make collocation point number is same with the one of above experiment Figure3.5 in [1].
   
 [comment]: # (time-sampling for the t input time variable. I used r = 10 for the next formula.)
