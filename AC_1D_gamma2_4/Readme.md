@@ -7,7 +7,7 @@ To imporve the result of Fig3.5 in [1], here are the brief descriptions for step
 - The below is Fig3.5 in [1], which bacame the basic control group result using PINN.
 - The .png files in this folder are the improved results as treatment group for the experiments(control group) in Fig 3.5 in [1].
 
-  <img src="comparison(control_group).png" width="400" />
+  <img src="comparison(control_group).png" width="600" />
 ## Improvement in each date
 **Key point to review improvement** : There are three values mainly.
 1. The exact solution from FD simulation(as in 'FD_simulation' file),
